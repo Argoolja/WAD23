@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -6,30 +8,29 @@
     <title>My Dashboard</title>
   </head>
   <body>
-	
-	<header>
-    		<strong>Welcome to your dashboard!</strong>
-	</header>
 
 	<section>
-		<div>
+		<h1>
+    		<strong>Welcome to your dashboard!</strong>
+		</h1>
+		<figure>
 			<img src="res/images/me.png" width="128" height="128" alt="My picture">
-		</div>
+			<figcaption>Caption for the image</figcaption>
+		</figure><br>
 		<div>
+			<strong> Information: </strong>
 			<ul>
 				<li> Argo Aljand </li>
 				<li> 20/09/2001 </li>
 				<li> Computer Engineering </li>
 			</ul>
 		</div>
-		<div>
-			<strong> Lingid: </strong>
-		</div>
 	</section>
 
 	<section>
-		<h1>Courses</h1>
+		<h2>Courses</h2>
 		<table>
+
 			<thead>
 			<tr>
 				<th>#</th>
@@ -38,43 +39,74 @@
 				<th>Grade</th>
 			</tr>
 			</thead>
+
 			<tbody>
 			<tr>
 				<td>1</td>
-				<td>Agile software development</td>
+				<td>
+            		<a href="https://courses.cs.ut.ee/2023/VT1/fall" target="_blank">Network Technology I</a>
+        		</td>
 				<td>fall</td>
 				<td>82</td>
 			</tr>
 			<tr>
 				<td>2</td>
-				<td> Systems modelling </td>
+				<td>
+            		<a href="https://courses.cs.ut.ee/2023/WAD/fall" target="_blank"> Web Application Development</a>
+        		</td>
 				<td>fall</td>
 				<td>85</td>
 			</tr>
 			<tr>
 				<td>3</td>
-				<td> Requirements Engineering </td>
+				<td>
+            		<a href="https://courses.cs.ut.ee/2023/os/fall" target="_blank">Operating systems</a>
+        		</td>
 				<td>fall</td>
 				<td>99</td>
 			</tr>
-			<tr>
-				<td>4</td>
-				<td> Human Computer Interaction </td>
-				<td>fall</td>
-				<td>65</td>
-			</tr>
 			</tbody>
+
+			<tfoot>
+				<tr>
+				   <th colspan="4">Year 2023/24</th>
+				</tr>
+			</tfoot>
+
 		</table>
 	</section>
 
+	<section>
+		<form>
+			<label for="course">Add Course:</label><br>
+			<input type="text" id="course" name="course"><br>
+			<label for="semesters">Semester:</label><br>
+			<select id="semesters" name="semesters">
+				<option value="fall">fall</option>
+				<option value="spring">spring</option>
+			</select><br>
+			<input type="radio" id="virtual" name="attendance" value="Virtual attendance">
+			<label for="virtual">Virtual attendance</label><br>
+			<input type="radio" id="physical" name="attendance" value="Physical attendance">
+			<label for="physical">Physical attendance</label><br>
+			<input type="submit" value="Submit">
+		  </form> 
+	</section>
+
 	<footer>
+		<div>
+			<strong> Links: </strong>
+		</div>
     		<ul>
         		<li>
-            		<a href="https://ois2.ut.ee/" target="_blank">OIS</a>
+            		<a href="https://ois2.ut.ee/" target="_blank" title="https://ois2.ut.ee/">OIS</a>
         		</li>
         		<li>
-            		<a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
+            		<a href="https://courses.cs.ut.ee/" target="_blank" title="https://courses.cs.ut.ee/">Courses</a>
         		</li>
+				<li>
+					<a href="mailto:Argo.Aljand@gmail.com">Get in touch</a>
+				</li>
     		</ul>
 	</footer>	
 
