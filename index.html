@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/favicon.ico">
+	<link rel="stylesheet" href="res/css/style.css">
     <title>My Dashboard</title>
   </head>
-  <body>
+  <body class="header">
 
 	<section>
 		<h1>
@@ -15,16 +16,15 @@
 		</h1>
 		<figure>
 			<img src="res/images/me.png" width="128" height="128" alt="My picture">
-			<figcaption>Caption for the image</figcaption>
+			<figcaption class="logo">
+				<strong> Information: </strong>
+				<ul>
+					<li> Argo Aljand </li>
+					<li> 20/09/2001 </li>
+					<li> Computer Engineering </li>
+				</ul>
+			</figcaption>
 		</figure><br>
-		<div>
-			<strong> Information: </strong>
-			<ul>
-				<li> Argo Aljand </li>
-				<li> 20/09/2001 </li>
-				<li> Computer Engineering </li>
-			</ul>
-		</div>
 	</section>
 
 	<section>
@@ -77,8 +77,8 @@
 	</section>
 
 	<section>
+		<h3> Add Cource: </h3>
 		<form>
-			<label for="course">Add Course:</label><br>
 			<input type="text" id="course" name="course"><br>
 			<label for="semesters">Semester:</label><br>
 			<select id="semesters" name="semesters">
@@ -93,9 +93,9 @@
 		  </form> 
 	</section>
 
-	<footer>
+	<footer class="nav">
 		<div>
-			<strong> Links: </strong>
+			<strong > Links: </strong>
 		</div>
     		<ul>
         		<li>
