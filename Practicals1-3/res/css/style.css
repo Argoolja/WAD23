@@ -36,7 +36,10 @@
 
     .header h2,h3{
         padding: 0px 1px;
-        text-align: left;
+        border: 1px solid #93041c;
+        background-color: #79a5c5;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+        text-align: center;
 
     }
 
@@ -45,6 +48,10 @@
             }
 
     .nav div{
+        text-align: center;
+    }
+    
+    .nav figure{
         text-align: center;
     }
 
@@ -102,3 +109,50 @@
     footer{
         margin: 10px;
     }
+
+
+    .static {
+        position: static;
+        background-color: #ad2121;
+        border: 3px solid #ad2121;
+    }
+
+    .relative {
+        position: relative;
+        left: 10px;
+        top: 10px;
+        background-color: #5721ad;
+        border: 3px solid #5721ad;
+    }
+
+    .fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        background-color: #ad2188;
+        border: 3px solid #ad2188;
+    }
+
+    .parentpositioning {
+        background-color: #6921ad;
+        width: 550;
+        height: 400;
+        position: relative;
+    }
+
+    .absolute {
+        position: absolute;
+        top: 40px;
+        width: 500px;
+        background-color: #ada121;
+        border: 3px solid #ada121;
+    }
+
+    .sticky {
+        position: sticky;
+        top: 0;
+        background-color: green;
+        border: 2px solid #4CAF50;
+    }
+   
