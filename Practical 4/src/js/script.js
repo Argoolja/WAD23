@@ -47,15 +47,23 @@ function code(n) {
 
 function fibonacci(n) {
     let out = 0
-    let onestep = 1
-    let two_steps = 0
-    let counter = 0
+    let one_step_back = 0
+    let two_steps_back = 0
+    let counter = 1
     while(n >= counter){
-        out = onestep + two_steps
         console.log(out)
-        two_steps = onestep
-        onestep = out
+        if (counter == 1){
+            one_step_back = 1
+            counter = counter + 1
+            out = 1
+            continue
+        }
+        
+        out = one_step_back + two_steps_back
+        two_steps_back = one_step_back
+        one_step_back = out
         counter = counter + 1
+        
     }
 }
 
@@ -91,7 +99,7 @@ function main(){
 
     compareVariables(a,b)
 
-    fibonacci(10)
+    fibonacci(6)
 }
 
 main()
