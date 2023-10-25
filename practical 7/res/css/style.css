@@ -1,5 +1,12 @@
 body {
     position: relative;
+    align-items: center;
+    background-color: black;
+}
+
+h1{
+    color: blue;
+    text-align: center;
 }
 
 .post {
@@ -7,5 +14,20 @@ body {
     position: relative;
     padding: 10px;
     margin: 10px auto;
-    border: 1px solid gray;
+    border: 1px solid rgb(115, 4, 95);
+    border-width: 10px;
+    background-color: violet;
+    box-shadow: 3px 3px 20px violet
+}
+
+.header {
+    text-align: center;
+    color: rgb(40, 177, 6);
+    text-shadow: 3px 3px 20px rgb(114, 230, 68);
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans";
+}
+
+.postContent{
+    color: rgb(43, 5, 131);
 }
